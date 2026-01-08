@@ -5,21 +5,21 @@
 class Lazyfire < Formula
   desc "Terminal UI for browsing Firebase Firestore"
   homepage "https://github.com/marjoballabani/lazyfire"
-  version "0.1.21"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.21/lazyfire_0.1.21_darwin_amd64.tar.gz"
-      sha256 "cb24a8ce70a1dd4580bc1387f919f3aca6e9d03c5a73392d5b14f8cde1021b5c"
+      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.3/lazyfire_0.1.3_darwin_amd64.tar.gz"
+      sha256 "598c4b88fa09c73e649bd100d6147270a6b8c054b4348a3d66a5f65a9f07b569"
 
       def install
         bin.install "lazyfire"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.21/lazyfire_0.1.21_darwin_arm64.tar.gz"
-      sha256 "56fd973492b2fa641b1464841c19f6ebfcf6bd8dc2d0eacd72ffdf4888d4ffac"
+      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.3/lazyfire_0.1.3_darwin_arm64.tar.gz"
+      sha256 "f5e9094615f49ef087338ea2066d6db424b6b86652546b81c6db3310ee1c6171"
 
       def install
         bin.install "lazyfire"
@@ -29,15 +29,15 @@ class Lazyfire < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.21/lazyfire_0.1.21_linux_amd64.tar.gz"
-      sha256 "e666f48f3e325467635e9d92b4050415966a3774ae353cd9099a3a398758b921"
+      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.3/lazyfire_0.1.3_linux_amd64.tar.gz"
+      sha256 "7ba7752f354aace5c3066a6bb613f3121b1bf8786b822f72d15c8a5a96dba99e"
       def install
         bin.install "lazyfire"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.21/lazyfire_0.1.21_linux_arm64.tar.gz"
-      sha256 "249e84f656208a05295ce36c94c2e805e7f350d3cfd8e76afe5751c9a7ead554"
+      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.3/lazyfire_0.1.3_linux_arm64.tar.gz"
+      sha256 "04a5c1061c5f57a970e11e08edd4e008f871a83f6ceb446536dad56f5556f634"
       def install
         bin.install "lazyfire"
       end
