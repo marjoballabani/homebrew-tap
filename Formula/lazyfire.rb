@@ -5,21 +5,21 @@
 class Lazyfire < Formula
   desc "Terminal UI for browsing Firebase Firestore"
   homepage "https://github.com/marjoballabani/lazyfire"
-  version "0.1.41"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.41/lazyfire_0.1.41_darwin_amd64.tar.gz"
-      sha256 "50402e8d968c0d172fa5106f6c8ee1d4c169c3fe9ad343e54c75d1598239568e"
+      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.2.0/lazyfire_0.2.0_darwin_amd64.tar.gz"
+      sha256 "8409c44f8abae8b7b5e647719784ebdd85fb2ce339dc9d284467eafe8aadb35b"
 
       define_method(:install) do
         bin.install "lazyfire"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.41/lazyfire_0.1.41_darwin_arm64.tar.gz"
-      sha256 "9d2febf169aa26a0b3de6930e0cea28dc4c0b27ceee3aa70053fb481f987051e"
+      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.2.0/lazyfire_0.2.0_darwin_arm64.tar.gz"
+      sha256 "349f5e7231e854016c5c717d5a4ff560cab76f9f83343d2b41292f4e574a4036"
 
       define_method(:install) do
         bin.install "lazyfire"
@@ -29,15 +29,15 @@ class Lazyfire < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.41/lazyfire_0.1.41_linux_amd64.tar.gz"
-      sha256 "1e083f07e48215538ef18a3e3a288e1a83f8622e70a22ea65de8df4460ef281d"
+      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.2.0/lazyfire_0.2.0_linux_amd64.tar.gz"
+      sha256 "72b6c47a88941b0d1ae5a7d2aaf7e0e862cbe22895ae4cbf8c8979c135433e63"
       define_method(:install) do
         bin.install "lazyfire"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.1.41/lazyfire_0.1.41_linux_arm64.tar.gz"
-      sha256 "702007321e23729faa70706fee128ac0ad305b079b08159ecfe889edb5714f79"
+      url "https://github.com/marjoballabani/lazyfire/releases/download/v0.2.0/lazyfire_0.2.0_linux_arm64.tar.gz"
+      sha256 "3333f407a718a29e0ebdb1ff6b65ec7182f83bd06b357552fbce0f53c86bcc58"
       define_method(:install) do
         bin.install "lazyfire"
       end
